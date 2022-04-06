@@ -1,5 +1,6 @@
-# Webscraper-Project
-This webscraper collects data for items on sale at https://www.asos.com/men/sale/cat/?cid=8409&nlid=mw|sale|shop+sale+by+product|sale+view+all using selenium. Data is stored locally as well as on aws s3 and rds. The scraper is also containerised using docker and run on an ec2 instance. Prometheus and grafana are used to monitor the metrics. A CI/CD pipeline is also set up for the docker image so that it is deployed to DockerHub everytime there is a new push on the main branch of the repository. 
+# Data collection pipeline
+An implementation of an industry grade data collection pipeline that runs scalably in the cloud. 
+The data collection pipeline consists of a webscraper that collects data for items on sale at https://www.asos.com/men/sale/cat/?cid=8409&nlid=mw|sale|shop+sale+by+product|sale+view+all using selenium. Data is stored locally as well as on aws s3 and rds. The scraper is also containerised using docker and run on an ec2 instance. Prometheus and grafana are used to monitor the metrics. A CI/CD pipeline is also set up for the docker image so that it is deployed to DockerHub everytime there is a new push on the main branch of the repository. 
 # Milestone 1
 The first step was to choose a website and build a scraper class with methods that navigate through the website including accepting cookies This was done using xpaths found on the website. The links to different products in the item container were acquired and then stored in a list.
 # Milestone 2
