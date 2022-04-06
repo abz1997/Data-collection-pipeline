@@ -203,7 +203,6 @@ class Scraper:
         img = pd.DataFrame.from_dict(self.img_dict, orient = 'index')
         df = df.transpose()
         img = img.transpose()
-        #print(df)
         with open('raw_data/data.json', 'w') as fp:
             json.dump(self.clothe_dict, fp, indent = 4)
 
