@@ -14,7 +14,7 @@ Code was refactored and adjusted and was made sure to run smoothly. Code was als
 # Milestone 6
 Options were added so that selenium can run in headless mode without issues. A docker image was made for the scraper and then containerised. EC2 was then set up and the docker image was then run on there.
 # Milestone 7
-A Prometheus container was then set up to monitor the scraper including hardware metrics. This was done by configuring the daemon file for Docker as well as the prometheus.yml file to monitor the metrics of the container in the ec2 instance. A grafana dashboard of the prometheus metrics was also made so that the metrics can be seen more clearly.
+A Prometheus container was then set up to monitor the scraper including hardware metrics. This was done by configuring the daemon file for Docker as well as the prometheus.yml file to monitor the metrics of the container in the ec2 instance. A grafana dashboard of the prometheus metrics was also made so that the metrics can be seen more clearly. ![alt text](http://localhost:3000/d/npGD1eynk/docker?orgId=1&from=1649226356859&to=1649247956859)
 # Milestone 8
 GitHub secrets that contain my Dockerhub details were then added. This was done so that GitHub action will build the Docker image and push it to my Dockerhub account everytime there is a new push to the main branch of the repository. Cronjobs were also added to the ec2 instance which pull the newest version of the scraper everyday from my Dockerhub account and run it
 
